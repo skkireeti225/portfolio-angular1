@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Kireeti</title>
+
+<link rel="stylesheet" type="text/css" href="styles/homeStyle.css">
+<link rel="stylesheet" type="text/css" href="styles/homebodyStyle.css">
+<link rel="stylesheet" type="text/css" href="styles/listStyle.css">
+<link rel="stylesheet" type="text/css" href="styles/registration.css">
+<link rel="stylesheet" type="text/css" href="styles/piechart.css">
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body ng-app="F1FeederApp">
+
+	<div class="" ng-controller="mainCtrl">
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">KIREETI SAMUDRALA</a>
+			    </div>
+			    <!-- <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Home</a></li>
+			      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Page 1-1</a></li>
+			          <li><a href="#">Page 1-2</a></li>
+			          <li><a href="#">Page 1-3</a></li>
+			        </ul>
+			      </li>
+			      <li><a href="#">Page 2</a></li>
+			      <li><a href="#">Page 3</a></li>
+			    </ul> -->
+			    <ul class="nav navbar-nav navbar-right">
+						<li ng-class="{active: $route.current.activetab == 'dashboard'}"> <a href="#">HOME</a> </li>
+				<li ng-class="{active: $route.current.activetab == 'AboutMe'}"> <a href="#AboutMe">ABOUT ME</a> </li>
+				<li ng-class="{active: $route.current.activetab == 'Experience'}"> <a href="#Experience">EXPERIENCE</a> </li>
+				<li ng-class="{active: $route.current.activetab == 'projects'}"> <a href="#projects">PROJECTS</a></li>
+			    </ul>
+			  </div>
+			</nav>
+		</header>
+		<div ng-view></div>
+		<footer class="navbar navbar-inverse navbar-fixed-bottom">
+		  <div class="navaber-text pull-left icons text">
+				<p>Sr. Front End UI Developer _ Kireeti Samurala </p>
+		  </div>
+			<div  class="navaber-text pull-right icons ">
+				<a href="https://github.com/skkireeti225" target="_blank"><i class="fa fa-git-square fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/krishna-samudrala-116490b2" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+				<a href="https://www.instagram.com/kireeti_samudrala/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+				<a  href="mailto:kireeti10655@gmail.com?Subject=Hello%20Kireeti" target="_top"><i class="fa fa-envelope fa-2x"></i></a>
+			</div>
+		</footer>
+	</div>
+
+
+<script src="./scripts/angular.js"></script>
+<script src= "./scripts/angularjs-route.js"></script>
+<script src="./scripts/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./scripts/highcharts.js"></script>
+<script src="./scripts/exporting.js"></script>
+<script src= "app.js"></script>
+<script src= "./controllers/mainCtrl.js"></script>
+<script src= "./controllers/mainController.js"></script>
+<script src= "./controllers/listController.js"></script>
+<script src= "./controllers/registrationController.js"></script>
+<script src= "./controllers/static.js"></script>
+<script src= "./controllers/detailsCtrl.js"></script>
+<script src= "./controllers/aboutCtrl.js"></script>
+<script src="./services/customerService.js"></script>
+
+
+
+</body>
+</html>

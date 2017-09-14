@@ -1,0 +1,26 @@
+/* CSS Document */
+#button{
+	width:90%;
+	height:200px;
+	border-radius:5px;
+	background-color:#CCCCCC;
+	margin:10px auto 0;
+	  opacity: 0.4;
+
+}
+#button p{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-large;
+}
+
+#jumborton{
+ width:90%;
+ height:197px;
+ padding:36px 96px;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #87ceeb !important;
+    background-color: #080808 !impotant;
+}
